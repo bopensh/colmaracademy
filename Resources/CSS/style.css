@@ -184,7 +184,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 16px;
 }
 
 .article-text h3,
@@ -216,4 +215,34 @@ p {
   .article-image-mobile img {
     width: 100%;
   }
+
+  .article-text {
+    margin-bottom: 32px;
+  }
+}
+
+/* Courses Section */
+
+.courses {
+  position: relative;
+  top: 64px;
+  background-color: rgb(248, 245, 245);
+}
+
+.courses-title {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.grid-image {
+  width: 100%;
+}
+
+.grid-image img {
+  width: 100%;
 }
