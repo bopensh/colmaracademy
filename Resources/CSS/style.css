@@ -1,16 +1,17 @@
 * {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 a {
   text-decoration: none;
-  color: black;
-  font-size: 0.75rem;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 
 /* Navigation */
@@ -25,6 +26,7 @@ header {
   position: fixed;
   z-index: 1;
   height: 64px;
+  background-color: #14213d;
 }
 
 header a {
@@ -43,11 +45,12 @@ header a {
   font-weight: 600;
   padding-left: 5px;
   padding-right: 2.5px;
-  color: rgb(231, 202, 36);
+  color: #fdc500;
 }
 
 .title-second {
   font-weight: 100;
+  color: #ffffff;
 }
 .desktop {
   display: flex;
@@ -80,7 +83,7 @@ header a {
   display: flex;
   position: relative;
   top: 64px;
-  background-color: rgb(182, 181, 181);
+  background-color: #ffffff;
 }
 
 .container-left {
@@ -107,9 +110,19 @@ p {
 }
 
 button {
-  padding: 8px 0px;
-  background-color: rgb(73, 73, 73);
+  background-color: #14213d;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 630px) {
@@ -322,6 +335,7 @@ p {
 footer {
   position: relative;
   top: 64px;
+  background-color: #14213d;
 }
 
 .footer-content {
@@ -333,6 +347,10 @@ footer {
 
 .footer-links {
   display: flex;
+}
+
+.footer-content h6 {
+  color: #ffffff;
 }
 
 .link {
