@@ -301,6 +301,22 @@ p {
   padding-bottom: 32px;
 }
 
+@media only screen and (max-width: 630px) {
+  .thesis-content {
+    display: none;
+  }
+
+  .thesis-container-right {
+    display: none;
+  }
+
+  .thesis-container-left {
+    width: 100%;
+    margin: 0px 0px 32px;
+    display: block;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -321,4 +337,14 @@ footer {
 
 .link {
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 630px) {
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+
+  .footer-links {
+    display: none;
+  }
 }
