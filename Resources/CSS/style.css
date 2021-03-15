@@ -14,6 +14,14 @@ a {
   letter-spacing: 2px;
 }
 
+a:hover {
+  color: #fdc500;
+}
+
+p {
+  font-size: 12px;
+}
+
 /* Navigation */
 
 .mobile {
@@ -100,7 +108,7 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: flex-start;
   padding-right: 75px;
 }
 
@@ -113,10 +121,9 @@ button {
   background-color: #14213d;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 12px 26px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -135,16 +142,10 @@ button:hover {
   }
 
   .container-right {
+    align-items: center;
+    text-align: center;
     margin: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     padding-right: 0px;
-  }
-
-  button {
-    width: 25%;
   }
 }
 
@@ -154,7 +155,6 @@ button:hover {
   display: flex;
   position: relative;
   top: 64px;
-  background-color: rgb(235, 232, 232);
 }
 .information-container-left {
   width: 60%;
@@ -172,7 +172,8 @@ button:hover {
 }
 
 .information-container-right {
-  margin-top: 32px;
+  margin: 32px auto;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -183,11 +184,18 @@ button:hover {
 
 .article {
   display: flex;
+  background-color: #9fabc4;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.article:hover {
+  background-color: #c5cfe2;
 }
 
 .article-image {
   width: 35%;
-  padding: 0px 16px 16px 16px;
+  padding: 16px;
 }
 
 .article-image img {
@@ -231,7 +239,8 @@ p {
   }
 
   .article-text {
-    margin-bottom: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -240,7 +249,6 @@ p {
 .courses {
   position: relative;
   top: 64px;
-  background-color: rgb(248, 245, 245);
 }
 
 .courses-title {
@@ -255,12 +263,27 @@ p {
   padding: 0px 72px 32px;
 }
 
+.grid-item {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.grid-item:hover {
+  transform: scale(1.075);
+  transition: 0.5s;
+}
+
 .grid-image {
   width: 100%;
 }
 
 .grid-image img {
   width: 100%;
+  border-radius: 5px;
+}
+
+.course-content {
+  padding: 0px 10px;
 }
 
 .course-content h3 {
